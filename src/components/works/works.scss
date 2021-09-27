@@ -1,0 +1,105 @@
+.works{
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .arrow{
+        font-size: 50px;
+        position: absolute;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            animation: blink 1.5s infinite;
+            opacity: 1;
+            @keyframes blink {
+                100%{
+                    opacity: 0.3;
+                }
+            }
+        }
+        &.left{
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+        &.right{
+            right: 100px;
+        }
+    }
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        .container{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .item{
+              height: 100%;
+              width: 700px;
+              background-color: white;
+              border-radius: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+                .left{
+                    flex: 4;
+                    height: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .leftContainer{
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .imgContainer{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: rgb(241, 177, 154);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                               width: 25px; 
+                            }
+                        }
+
+                        h1{
+                            font-size: 25px;
+
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                        span{
+                            font-size: 14px;
+                            text-decoration: underline;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .right{
+                    flex: 8;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    img{
+                        width: 400px;
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
+}
