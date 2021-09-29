@@ -17,12 +17,10 @@ function Menubar({menuOpen,setMenuOpen}) {
                     </div>
                 </div>
                 <div className="right-widgets">
-                {/* <a href="#works">right</a> */}
                 <div className="menu" onClick={()=>setMenuOpen(!menuOpen)}>
                     <span className="line1"></span>
                     <span className="line2"></span>
                     <span className="line3"></span>
-
                 </div>
                 </div>
 
