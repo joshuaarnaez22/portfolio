@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .testimonial{
     background-color: white;
     display: flex;
@@ -6,6 +8,10 @@
     h1{
         margin-top: 20px;
         font-size: 50px;
+
+        @include mobile{
+            font-size: 20px;
+        }
     }
     .container{
         width: 100%;
@@ -13,6 +19,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile{
+            flex-direction: column;
+            height: 90%;
+        }
         .card{
             width: 250px;
             height: 70%;
@@ -24,7 +34,10 @@
             flex-direction: column;
             justify-content: space-between;
             transition: all 1s ease;
-
+            @include mobile{
+                width: 230px;
+                margin: 10px 0;
+            }
             &.featured{
                 width: 270px;
                 height: 75%;
@@ -38,11 +51,16 @@
                align-items: center;
                justify-content: center;
                 margin-top: 30px;
-                
+                @include mobile{
+                    margin-top: 0;
+                }
                img{
                 &.left,
                 &.right{
                     height: 25px;
+                    @include mobile{
+                        height: 20px;
+                    }
                 }
                 
                 &.user{
@@ -50,7 +68,12 @@
                     width: 60px;
                     border-radius: 50%;
                     object-fit: cover;
-                    margin:0px 30px
+                    margin:0px 30px;
+                    @include mobile{
+                        height: 40px;
+                        width: 40px;
+                    }
+                    
                 }
              
                }
@@ -64,6 +87,9 @@
                 padding:10px;
                 background-color: rgb(241, 236, 237);
                 border-radius: 10px;
+                @include mobile{
+                    font-size: 13px;
+                }
             }
         }
         .bottom{

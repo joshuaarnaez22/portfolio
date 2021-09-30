@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .works{
     background-color: crimson;
     display: flex;
@@ -10,7 +11,9 @@
         position: absolute;
         color: white;
         cursor: pointer;
-
+        @include mobile {
+            display: none;
+        }
         &:hover{
             animation: blink 1.5s infinite;
             opacity: 1;
@@ -34,6 +37,12 @@
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
+
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
         .container{
             width: 100vw;
             display: flex;
@@ -47,18 +56,29 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              @include mobile {
+                width: 90%;
+                height: 180px;
+                margin: 5px 0;
+            }
                 .left{
                     flex: 4;
                     height: 90%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @include mobile {
+                        flex: 6;    
+                    }
                     .leftContainer{
                         width: 90%;
                         height: 70%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        @include mobile {
+                            justify-content: center;
+                            }
                         .imgContainer{
                             width: 40px;
                             height: 40px;
@@ -67,6 +87,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            @include mobile {
+                            width: 30px;
+                            height: 30px;
+                            }
+
                             img{
                                width: 25px; 
                             }
@@ -74,7 +99,10 @@
 
                         h1{
                             font-size: 25px;
-
+                            overflow: hidden;
+                            @include mobile {
+                                font-size: 20px;
+                            }
                         }
                         p{
                             font-size: 14px;
@@ -84,16 +112,22 @@
                             text-decoration: underline;
                             font-weight: 600;
                             cursor: pointer;
+                            @include mobile {
+                                display: none;
+                            }
                         }
                     }
                 }
                 .right{
-                    flex: 8;
+                    flex: 6;
                     height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    @include mobile {
+                        flex: 4;    
+                    }
                     img{
                         width: 400px;
                         transform: rotate(-10deg);
