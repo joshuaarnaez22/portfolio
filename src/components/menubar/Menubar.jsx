@@ -9,7 +9,7 @@ function Menubar({menuOpen,setMenuOpen}) {
                     <a href="#intro" className="logo">Logo</a>
                     <div className="itemContainer">
                         <PersonIcon className="icon"/>
-                        <span>+12 422 532 32</span>
+                        <span>09053132911</span>
                     </div>
                     <div className="itemContainer">
                         <MailIcon className="icon"/>

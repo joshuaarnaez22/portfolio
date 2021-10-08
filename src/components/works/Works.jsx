@@ -14,30 +14,34 @@ function Works() {
     const data = [
         {
           id: 1,
-          icon: "./assets/mobile.png",
-          title: "Web Design",
+          icon: "./assets/globe.png",
+          title: "Porfolio Website",
           desc:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
           img:
-            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+            "./assets/portfolio.png",
+            link : 'https://portfolio-seven-ebon-38.vercel.app/'
         },
         {
           id: 2,
           icon: "./assets/globe.png",
-          title: "Mobile Application",
+          title: "Netlix Clone",
           desc:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           img:
-            "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+            "./assets/netflix.png",
+            link : 'https://netflix-build-clone-6a7cb.web.app/'
+
         },
         {
           id: 3,
-          icon: "./assets/writing.png",
-          title: "Branding",
+          icon: "./assets/globe.png",
+          title: "Airbnb Clone",
           desc:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           img:
-            "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+            "./assets/airbnb.png",
+            link : 'https://airbnb-react-ten.vercel.app/'
         },
       ];
   return (
@@ -55,7 +59,7 @@ function Works() {
                      <p>
                        {d.desc}
                      </p>
-                     <span>Projects</span>
+                     <span><a href={d.link} rel="noreferrer" target="_blank">Link ➡️</a></span>
                    </div>
                  </div>
                  <div className="right" >
