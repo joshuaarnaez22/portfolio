@@ -17,7 +17,7 @@ function Works() {
           icon: "./assets/globe.png",
           title: "Porfolio Website",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "Technology Used :Reactjs,sass",
           img:
             "./assets/portfolio.png",
             link : 'https://portfolio-seven-ebon-38.vercel.app/'
@@ -27,7 +27,7 @@ function Works() {
           icon: "./assets/globe.png",
           title: "Netlix Clone",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Technology Used : Reactjs,Redux,npm,sass,Firebase-auth,IMDB API",
           img:
             "./assets/netflix.png",
             link : 'https://netflix-build-clone-6a7cb.web.app/'
@@ -38,7 +38,7 @@ function Works() {
           icon: "./assets/globe.png",
           title: "Airbnb Clone",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Technology Used : Reactjs,Nextjs,npm,Tailwindcss,Mapbox",
           img:
             "./assets/airbnb.png",
             link : 'https://airbnb-react-ten.vercel.app/'
